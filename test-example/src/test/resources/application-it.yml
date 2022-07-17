@@ -1,0 +1,17 @@
+# it环境  springboot配置文件，测试使用
+logging:
+  level.root: debug
+
+spring:
+  application:
+    name: app
+  datasource:
+    url: jdbc:mariadb://localhost:${TEST_MYSQL_PORT:3344}/test
+    username: root
+    password:
+    driver-class-name: org.mariadb.jdbc.Driver
+  redis:
+    database: 0
+    host: localhost
+    port: ${TEST_REDIS_PORT:6479}
+    password:

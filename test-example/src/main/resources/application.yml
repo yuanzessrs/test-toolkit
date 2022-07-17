@@ -1,0 +1,14 @@
+logging:
+  level.root: info
+
+spring:
+  application:
+    name: app
+  datasource:
+    url: jdbc:mariadb://localhost:${TEST_MYSQL_PORT:3344}/test
+    username: root
+    password:
+    driver-class-name: org.mariadb.jdbc.Driver
+
+server:
+  port: 80

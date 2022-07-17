@@ -1,0 +1,1 @@
+INSERT INTO test.users VALUES (1, 'mr.zeng', 'seven')
