@@ -30,7 +30,7 @@
 
 #### 介绍
 
-测试环境支持了junit5、spock两种测试框架。基于springboot的集成测试，抽象了相关的注解和插件。不同于现在各服务的用法，虽然使用了@SpringBootTest，但是去掉了自动装配（不会扫描哪些AutoConfiguration），也不会扫描当前项目里面的所有bean。
+测试环境支持了junit5、spock两种测试框架。基于springboot的集成测试，抽象了相关的注解和插件。不同于常见的用法，虽然使用了@SpringBootTest，但是去掉了自动装配（不会扫描哪些AutoConfiguration），也不会扫描当前项目里面的所有bean。
 
 bean的加载是依据最小化原则，需要测哪些bean就用哪些bean，不用的就不加载
 
